@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ==================== SEO OPTIMIZATION ==================== -->
+    <!-- Meta Title (Maksimal 60 karakter untuk Google) -->
+    <title>Jasa Konsultan PBG & SLF Terpercaya | PT Fremont Green Vision</title>
+    
+    <!-- Meta Description (Maksimal 155-160 karakter, ini yang muncul di bawah judul pencarian Google) -->
+    <meta name="description" content="PT Fremont Green Vision adalah konsultan perizinan bangunan terpercaya di Indonesia. Kami melayani jasa kepengurusan PBG, SLF, Arsitektur, dan Bangunan Hijau.">
+    
+    <!-- Meta Keywords (Opsional tapi membantu penandaan spesifik) -->
+    <meta name="keywords" content="Jasa PBG, Pengurusan SLF, Sertifikat Laik Fungsi, Persetujuan Bangunan Gedung, Konsultan IMB, Biro Jasa Perizinan Bangunan, PT Fremont Green Vision, Konsultan Arsitektur, Sertifikasi Bangunan Gedung Hijau">
+    
+    <!-- Author & Robots -->
+    <meta name="author" content="PT Fremont Green Vision">
+    <meta name="robots" content="index, follow"> <!-- Memerintahkan bot Google untuk mengindeks halaman ini -->
+
+    <!-- Open Graph / Facebook / WhatsApp (Untuk preview link saat dibagikan) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.fremontgreenvision.co.id/"> <!-- Ganti dengan domain asli Anda -->
+    <meta property="og:title" content="Jasa Konsultan PBG & SLF Terpercaya | PT Fremont Green Vision">
+    <meta property="og:description" content="Layanan jasa konsultan perizinan bangunan (PBG & SLF), perencanaan arsitektur, dan BGH yang legal, cepat, serta ditangani tenaga ahli bersertifikat.">
+    <!-- Gambar preview OG (Ukuran ideal 1200x630px). Ganti URL ini dengan link gambar banner asli Anda nantinya -->
+    <meta property="og:image" content="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Jasa Konsultan PBG & SLF | PT Fremont Green Vision">
+    <meta property="twitter:description" content="Urus PBG, SLF, dan Sertifikasi Gedung Hijau Anda bersama PT Fremont Green Vision. Tepat waktu dan 100% legal.">
+    
+    <!-- Canonical URL (Mencegah Google menganggap ada duplikat konten) -->
+    <link rel="canonical" href="https://www.fremontgreenvision.co.id/">
+    <!-- ========================================================== -->
+
+    <!-- Tailwind CSS (via CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons (via CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Menyembunyikan scrollbar untuk galeri tapi tetap bisa di-scroll */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* --- Animasi Scroll Ringan --- */
+        /* Efek Swing dari Kiri (Khusus Gambar) */
+        .scroll-swing {
+            opacity: 0;
+            transform: translateX(-50px) rotate(-4deg);
+            transition: all 0.9s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efek memantul/swing halus */
+        }
+        .scroll-swing.active {
+            opacity: 1;
+            transform: translateX(0) rotate(0);
+        }
+
+        /* Efek Muncul dari Bawah (Untuk Teks/Card) */
+        .scroll-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.7s ease-out;
+        }
+        .scroll-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="min-h-screen text-gray-800 bg-gray-50 overflow-x-hidden">
+
+    <!-- Top Bar (Contact Info) - Hidden on mobile -->
+    <div class="hidden md:flex justify-between items-center bg-blue-900 text-white py-2 px-8 text-sm">
+        <div class="flex space-x-6">
+            <div class="flex items-center space-x-2">
+                <i data-lucide="mail" class="w-4 h-4 text-amber-400"></i>
+                <span>fremontgreenv@gmail.com</span>
+            </div>
+            <div class="flex items-center space-x-2">
+                <i data-lucide="phone" class="w-4 h-4 text-amber-400"></i>
+                <span>0852 7019 4027</span>
+            </div>
+        </div>
+        <div class="flex items-center space-x-2 text-gray-300">
+            <i data-lucide="map-pin" class="w-4 h-4 text-amber-400"></i>
+            <span>l. SMTK Medan No.9, Padang Bulan Selayang I, Kec Medan Selayang, Kota Medan, Sumatera Utara</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="sticky top-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm py-5 px-6 md:px-12 flex justify-between items-center shadow-sm md:shadow-none">
+        <!-- Logo -->
+        <a href="#home" class="flex items-center space-x-2 cursor-pointer group">
+            <img src="aset/logo.jpeg" alt="Logo FGV" class="w-12 h-12 object-contain">
+            </div>
+            <div>
+                <span class="block font-bold text-xl leading-tight text-blue-900">PT Fremont Green Vision</span>
+                <span class="block text-[10px] md:text-xs text-gray-500 font-medium tracking-wider uppercase">Konsultan Perizinan & Arsitektur</span>
+            </div>
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex items-center space-x-8">
+            <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Beranda</a>
+            <a href="#tentang" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Tentang Kami</a>
+            <a href="#layanan" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Layanan</a>
+            <a href="#alur" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Alur Kerja</a>
+            <a href="#galeri" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Galeri</a>
+            <a href="#faq" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">FAQ</a>
+            <a href="#kontak" class="bg-amber-500 hover:bg-amber-600 text-white px-6 py-2.5 rounded-md font-semibold transition-colors shadow-sm">
+                Hubungi Kami
+            </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="lg:hidden text-blue-900 focus:outline-none" aria-label="Toggle Menu">
+            <i data-lucide="menu" id="icon-menu" class="w-7 h-7"></i>
+            <i data-lucide="x" id="icon-x" class="w-7 h-7 hidden"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-white pt-24 px-6 flex-col space-y-4 hidden lg:hidden">
+        <a href="#home" class="mobile-link text-left text-xl font-medium text-gray-800 py-3 border-b">Beranda</a>
+        <a href="#tentang" class="mobile-link text-left text-xl font-medium text-gray-800 py-3 border-b">Tentang Kami</a>
+        <a href="#layanan" class="mobile-link text-left text-xl font-medium text-gray-800 py-3 border-b">Layanan</a>
+        <a href="#alur" class="mobile-link text-left text-xl font-medium text-gray-800 py-3 border-b">Alur Kerja</a>
+        <a href="#galeri" class="mobile-link text-left text-xl font-medium text-gray-800 py-3 border-b">Galeri</a>
+        <a href="#faq" class="mobile-link text-left text-xl font-medium text-gray-800 py-3 border-b">FAQ</a>
+        <a href="#kontak" class="mobile-link bg-blue-900 text-white py-4 rounded-lg font-semibold mt-4 text-center">
+            Hubungi Kami
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative pt-20 pb-32 lg:pt-32 lg:pb-48 flex items-center min-h-[85vh]">
+        <div class="absolute inset-0 z-0">
+            <!-- Background Image from Unsplash with descriptive alt for SEO. NO Lazy load here for fast LCP -->
+            <img 
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80" 
+                alt="Gedung Perkantoran dan Pencakar Langit Indonesia" 
+                class="w-full h-full object-cover"
+            />
+            <!-- Dark Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-950/90 to-blue-900/70"></div>
+        </div>
+
+        <div class="container mx-auto px-6 md:px-12 relative z-10 scroll-up">
+            <div class="max-w-3xl">
+                <div class="inline-block bg-amber-500/20 text-amber-400 font-semibold px-4 py-1.5 rounded-full text-sm mb-6 border border-amber-400/30">
+                    #1 Konsultan PBG, SLF & Arsitektur
+                </div>
+                <!-- H1 Tag is crucial for Google SEO -->
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                    Solusi Tepat Legalitas <span class="text-amber-400">Bangunan Anda</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-10 leading-relaxed max-w-2xl">
+                    Kami siap membantu memperlancar proses penerbitan Persetujuan Bangunan Gedung (PBG), Sertifikat Laik Fungsi (SLF), dan perencanaan arsitektur dengan cepat, transparan, dan sesuai regulasi.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <!-- Ganti nomor di link ini untuk pengaturan WhatsApp -->
+                    <a href="https://wa.me/6285270194027?text=Halo%20admin%20PT%20Fremont%20Green%20Vision,%20saya%20ingin%20berkonsultasi%20mengenai%20jasa%20pengurusan%20PBG/SLF/Arsitektur."
+                       target="_blank" rel="noopener noreferrer"
+                       class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-md font-semibold transition-colors text-center flex items-center justify-center space-x-2 shadow-lg">
+                        <span>Konsultasi Gratis</span>
+                        <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#layanan"
+                       class="bg-transparent hover:bg-white/10 text-white border-2 border-white px-8 py-4 rounded-md font-semibold transition-colors text-center inline-flex items-center justify-center backdrop-blur-sm">
+                        Pelajari Layanan Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="tentang" class="py-20 bg-white">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                <div class="w-full lg:w-1/2 relative scroll-swing">
+                    <div class="absolute top-4 -left-4 w-full h-full border-4 border-amber-400 rounded-lg z-0 hidden md:block"></div>
+                    <!-- Ditambahkan loading="lazy" -->
+                    <img 
+                        src="aset/1.webp" 
+                        alt="Tim Profesional PT Fremont Green Vision" 
+                        loading="lazy"
+                        class="relative z-10 rounded-lg shadow-xl w-full object-cover h-[400px]"
+                    />
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-6 -right-6 bg-blue-900 text-white p-6 rounded-lg shadow-xl z-20 hidden md:flex items-center space-x-4">
+                        <div class="text-4xl font-bold text-amber-400">3+</div>
+                        <div class="text-sm font-medium leading-tight">Tahun<br/>Pengalaman</div>
+                    </div>
+                </div>
+                
+                <div class="w-full lg:w-1/2 scroll-up" style="transition-delay: 200ms;">
+                    <span class="block text-blue-600 font-bold uppercase tracking-wider text-sm mb-2">Tentang Kami</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Mitra Strategis Perizinan & Desain Gedung Anda</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        <strong class="text-gray-800">PT Fremont Green Vision</strong> adalah perusahaan konsultan yang berfokus pada penyediaan jasa kepengurusan legalitas bangunan, perencanaan arsitektur, dan penerapan konsep bangunan gedung hijau (BGH) di seluruh wilayah Indonesia.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Didukung oleh tim tenaga ahli yang bersertifikat dan berpengalaman, kami berkomitmen memberikan pelayanan yang efisien, tepat waktu, dan mematuhi seluruh peraturan perundang-undangan yang berlaku. Kepuasan, estetika, dan keamanan aset Anda adalah prioritas utama kami.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="check-circle" class="text-amber-500 w-6 h-6"></i>
+                            <span class="font-medium text-gray-800">Tenaga Ahli Tersertifikasi</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="check-circle" class="text-amber-500 w-6 h-6"></i>
+                            <span class="font-medium text-gray-800">Proses Transparan</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="check-circle" class="text-amber-500 w-6 h-6"></i>
+                            <span class="font-medium text-gray-800">Berorientasi Ramah Lingkungan</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="check-circle" class="text-amber-500 w-6 h-6"></i>
+                            <span class="font-medium text-gray-800">Jaminan Legalitas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="layanan" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-16 scroll-up">
+                <span class="block text-blue-600 font-bold uppercase tracking-wider text-sm mb-2">Layanan Kami</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Solusi Legalitas & Perencanaan Komprehensif</h2>
+                <p class="text-gray-600">
+                    Kami menyediakan layanan end-to-end untuk memastikan bangunan Anda aman, legal, estetis, dan bebas dari kendala di masa depan.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-8 border border-gray-100 group scroll-up">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <i data-lucide="file-text" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Persetujuan Bangunan Gedung (PBG)</h3>
+                    <p class="text-gray-600 mb-6 line-clamp-4">
+                        Pengganti IMB (Izin Mendirikan Bangunan). Layanan pengurusan perizinan wajib dari pemerintah untuk membangun baru, mengubah, memperluas, atau merawat bangunan gedung sesuai standar teknis.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-start"><i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0"></i> Bangunan Residensial</li>
+                        <li class="flex items-start"><i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0"></i> Gedung Komersial / Perkantoran</li>
+                        <li class="flex items-start"><i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0"></i> Fasilitas Industri & Gudang</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-8 border border-gray-100 group scroll-up" style="transition-delay: 100ms;">
+                    <div class="w-16 h-16 bg-amber-50 text-amber-500 rounded-lg flex items-center justify-center mb-6 group-hover:bg-amber-500 group-hover:text-white transition-colors">
+                        <i data-lucide="building" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Sertifikat Laik Fungsi (SLF)</h3>
+                    <p class="text-gray-600 mb-6 line-clamp-4">
+                        Sertifikat yang diterbitkan pemerintah untuk menyatakan bahwa bangunan gedung telah selesai dibangun sesuai PBG dan dinilai layak secara fungsi serta aman untuk digunakan.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-start"><i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0"></i> Penilaian Arsitektur & Struktur</li>
+                        <li class="flex items-start"><i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0"></i> Uji Kelayakan Mekanikal Elektrikal</li>
+                        <li class="flex items-start"><i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0"></i> Perpanjangan SLF</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-8 border border-gray-100 group scroll-up" style="transition-delay: 200ms;">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <i data-lucide="briefcase" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Kajian Teknis & Rekayasa</h3>
+                    <p class="text-gray-600 mb-6 line-clamp-4">
+                        Kami juga menyediakan jasa pembuatan dokumen teknis sebagai syarat utama pengurusan izin, ditangani langsung oleh tenaga ahli bersertifikat (SKA/SKK).
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-start"><i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0"></i> Perhitungan Struktur Bangunan</li>
+                        <li class="flex items-start"><i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0"></i> Kajian Mekanikal & Elektrikal</li>
+                        <li class="flex items-start"><i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0"></i> As-Built Drawing</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 (Arsitektur) -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-8 border border-gray-100 group scroll-up">
+                    <div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                        <i data-lucide="pen-tool" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Konsultan Perencana Arsitektur</h3>
+                    <p class="text-gray-600 mb-6 line-clamp-4">
+                        Layanan perencanaan desain arsitektur komprehensif yang memadukan keindahan estetika, efisiensi fungsi ruang, dan kepatuhan terhadap regulasi tata kota yang berlaku.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-start"><i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0"></i> Konsep & Pradesain Bangunan</li>
+                        <li class="flex items-start"><i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0"></i> Pembuatan Gambar Kerja (DED)</li>
+                        <li class="flex items-start"><i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0"></i> Visualisasi & 3D Modeling</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 (Bangunan Gedung Hijau) -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-8 border border-gray-100 group scroll-up" style="transition-delay: 100ms;">
+                    <div class="w-16 h-16 bg-emerald-50 text-emerald-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <i data-lucide="leaf" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Sertifikasi Bangunan Gedung Hijau</h3>
+                    <p class="text-gray-600 mb-6 line-clamp-4">
+                        Pendampingan pengurusan dan penilaian sertifikasi Bangunan Gedung Hijau (BGH) atau Greenship untuk merealisasikan bangunan yang ramah lingkungan dan hemat energi.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-start"><i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0"></i> Audit Energi & Efisiensi Air</li>
+                        <li class="flex items-start"><i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0"></i> Asesmen Kriteria BGH / Greenship</li>
+                        <li class="flex items-start"><i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0"></i> Penerbitan Sertifikat Resmi BGH</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-blue-900 text-white relative overflow-hidden">
+        <!-- Abstract background shapes -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-blue-800 rounded-full opacity-50 blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-blue-950 rounded-full opacity-50 blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
+        
+        <div class="container mx-auto px-6 md:px-12 relative z-10">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="w-full lg:w-1/3 scroll-up">
+                    <span class="block text-amber-400 font-bold uppercase tracking-wider text-sm mb-2">Keunggulan Kami</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Mengapa Memilih Fremont Green Vision?</h2>
+                    <p class="text-gray-300 mb-8">
+                        Birokrasi perizinan dan kerumitan desain seringkali memakan waktu. Kami hadir untuk mengambil alih proses tersebut agar Anda bisa fokus pada bisnis utama Anda.
+                    </p>
+                    <a href="https://wa.me/6285270194027" target="_blank" rel="noopener noreferrer"
+                       class="inline-block bg-white text-blue-900 hover:bg-gray-100 px-6 py-3 rounded-md font-semibold transition-colors">
+                        Mulai Konsultasi
+                    </a>
+                </div>
+                
+                <div class="w-full lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-blue-800/50 backdrop-blur-sm p-6 rounded-xl border border-blue-700 scroll-up" style="transition-delay: 100ms;">
+                        <i data-lucide="shield-check" class="text-amber-400 mb-4 w-9 h-9"></i>
+                        <h4 class="text-xl font-bold mb-2">Legalitas Terjamin</h4>
+                        <p class="text-gray-300 text-sm">Proses pengurusan 100% legal dan terdaftar resmi di sistem SIMBG (Sistem Informasi Manajemen Bangunan Gedung).</p>
+                    </div>
+                    <div class="bg-blue-800/50 backdrop-blur-sm p-6 rounded-xl border border-blue-700 scroll-up" style="transition-delay: 200ms;">
+                        <i data-lucide="clock" class="text-amber-400 mb-4 w-9 h-9"></i>
+                        <h4 class="text-xl font-bold mb-2">Tepat Waktu</h4>
+                        <p class="text-gray-300 text-sm">Kami menerapkan timeline kerja yang jelas dan terstruktur untuk memastikan dokumen Anda selesai sesuai target.</p>
+                    </div>
+                    <div class="bg-blue-800/50 backdrop-blur-sm p-6 rounded-xl border border-blue-700 scroll-up" style="transition-delay: 300ms;">
+                        <i data-lucide="briefcase" class="text-amber-400 mb-4 w-9 h-9"></i>
+                        <h4 class="text-xl font-bold mb-2">Tim Profesional</h4>
+                        <p class="text-gray-300 text-sm">Didukung oleh arsitek, insinyur sipil, dan MEP yang memiliki Sertifikat Keahlian (SKA) resmi.</p>
+                    </div>
+                    <div class="bg-blue-800/50 backdrop-blur-sm p-6 rounded-xl border border-blue-700 scroll-up" style="transition-delay: 400ms;">
+                        <i data-lucide="message-circle" class="text-amber-400 mb-4 w-9 h-9"></i>
+                        <h4 class="text-xl font-bold mb-2">Komunikasi Aktif</h4>
+                        <p class="text-gray-300 text-sm">Kami selalu memberikan update berkala mengenai status perkembangan desain dan dokumen perizinan Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section id="alur" class="py-20 bg-white">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-16 scroll-up">
+                <span class="block text-blue-600 font-bold uppercase tracking-wider text-sm mb-2">Alur Kerja</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Proses Sederhana & Transparan</h2>
+                <p class="text-gray-600">
+                    Bagaimana kami membantu Anda mengurus Perencanaan, PBG, & SLF dari awal hingga sertifikat terbit.
+                </p>
+            </div>
+
+            <div class="relative">
+                <!-- Connecting line for desktop -->
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-blue-100 -translate-y-1/2 z-0"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
+                    <!-- Step 1 -->
+                    <div class="text-center scroll-up">
+                        <div class="w-20 h-20 mx-auto bg-white border-4 border-blue-500 rounded-full flex items-center justify-center text-2xl font-bold text-blue-600 shadow-lg mb-6 relative">
+                            1
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900 mb-2">Konsultasi Awal</h4>
+                        <p class="text-sm text-gray-600">Diskusi kebutuhan konsep/desain, pengecekan zonasi, dan estimasi biaya.</p>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="text-center scroll-up" style="transition-delay: 150ms;">
+                        <div class="w-20 h-20 mx-auto bg-white border-4 border-blue-500 rounded-full flex items-center justify-center text-2xl font-bold text-blue-600 shadow-lg mb-6 relative">
+                            2
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900 mb-2">Pengumpulan Data</h4>
+                        <p class="text-sm text-gray-600">Survey lapangan, pembuatan dokumen desain, teknis & administratif.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="text-center scroll-up" style="transition-delay: 300ms;">
+                        <div class="w-20 h-20 mx-auto bg-white border-4 border-amber-500 rounded-full flex items-center justify-center text-2xl font-bold text-amber-500 shadow-lg mb-6 relative">
+                            3
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900 mb-2">Proses Sidang/Input</h4>
+                        <p class="text-sm text-gray-600">Input sistem SIMBG, sidang TPA/TPT, dan revisi dokumen jika ada.</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="text-center scroll-up" style="transition-delay: 450ms;">
+                        <div class="w-20 h-20 mx-auto bg-white border-4 border-green-500 rounded-full flex items-center justify-center text-2xl font-bold text-green-500 shadow-lg mb-6 relative">
+                            4
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900 mb-2">Penerbitan Izin</h4>
+                        <p class="text-sm text-gray-600">Pembayaran retribusi, penyerahan desain akhir & dokumen perizinan kepada klien.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Kegiatan Team Section -->
+    <section id="galeri" class="py-20 bg-gray-50 overflow-hidden">
+        <div class="container mx-auto px-6 md:px-12 mb-10 text-center scroll-up">
+            <span class="block text-blue-600 font-bold uppercase tracking-wider text-sm mb-2">Portfolio</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Galeri Kegiatan Team</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                 komitmen kami dalam merancang dan menangani berbagai proyek perizinan bangunan komersial maupun residensial.
+            </p>
+        </div>
+
+        <div class="relative max-w-[1400px] mx-auto px-4 md:px-12">
+            <!-- Slider Container -->
+            <div id="gallery-slider" class="flex gap-6 overflow-x-auto no-scrollbar scroll-auto py-4 items-center">
+                <!-- Slot 1 -->
+                <div class="scroll-swing min-w-[280px] md:min-w-[350px] flex-shrink-0 rounded-xl overflow-hidden shadow-lg bg-white group cursor-pointer border border-gray-100">
+                    <div class="overflow-hidden h-56 relative">
+                        <img src="aset/11.webp" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/40 transition-colors duration-300"></div>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-gray-900"></h4>
+                        <p class="text-sm text-amber-500 font-medium"></p>
+                    </div>
+                </div>
+                <!-- Slot 2 -->
+                <div class="scroll-swing min-w-[280px] md:min-w-[350px] flex-shrink-0 rounded-xl overflow-hidden shadow-lg bg-white group cursor-pointer border border-gray-100" style="transition-delay: 100ms;">
+                    <div class="overflow-hidden h-56 relative">
+                        <img src="aset/2.webp" alt="Proyek Gudang Logistik" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/40 transition-colors duration-300"></div>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-gray-900"></h4>
+                        <p class="text-sm text-amber-500 font-medium"></p>
+                    </div>
+                </div>
+                <!-- Slot 3 -->
+                <div class="scroll-swing min-w-[280px] md:min-w-[350px] flex-shrink-0 rounded-xl overflow-hidden shadow-lg bg-white group cursor-pointer border border-gray-100" style="transition-delay: 200ms;">
+                    <div class="overflow-hidden h-56 relative">
+                        <img src="aset/3.webp" alt="Proyek Residensial Premium" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/40 transition-colors duration-300"></div>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-gray-900"></h4>
+                        <p class="text-sm text-amber-500 font-medium"></p>
+                    </div>
+                </div>
+                <!-- Slot 4 -->
+                <div class="scroll-swing min-w-[280px] md:min-w-[350px] flex-shrink-0 rounded-xl overflow-hidden shadow-lg bg-white group cursor-pointer border border-gray-100" style="transition-delay: 300ms;">
+                    <div class="overflow-hidden h-56 relative">
+                        <img src="aset/4.webp" alt="Interior Office" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/40 transition-colors duration-300"></div>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-gray-900"></h4>
+                        <p class="text-sm text-amber-500 font-medium"></p>
+                    </div>
+                </div>
+                <!-- Slot 5 -->
+                <div class="scroll-swing min-w-[280px] md:min-w-[350px] flex-shrink-0 rounded-xl overflow-hidden shadow-lg bg-white group cursor-pointer border border-gray-100" style="transition-delay: 400ms;">
+                    <div class="overflow-hidden h-56 relative">
+                        <img src="aset/7.webp" alt="Proyek RS/Klinik" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/40 transition-colors duration-300"></div>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-gray-900"></h4>
+                        <p class="text-sm text-amber-500 font-medium"></p>
+                    </div>
+                </div>
+                <!-- Slot 6 -->
+                <div class="scroll-swing min-w-[280px] md:min-w-[350px] flex-shrink-0 rounded-xl overflow-hidden shadow-lg bg-white group cursor-pointer border border-gray-100" style="transition-delay: 500ms;">
+                    <div class="overflow-hidden h-56 relative">
+                        <img src="aset/11.webp" alt="Pusat Perbelanjaan" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/40 transition-colors duration-300"></div>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-gray-900"></h4>
+                        <p class="text-sm text-amber-500 font-medium"></p>
+                    </div>
+                </div>
+                <!-- Slot 7 -->
+                <div class="scroll-swing min-w-[280px] md:min-w-[350px] flex-shrink-0 rounded-xl overflow-hidden shadow-lg bg-white group cursor-pointer border border-gray-100" style="transition-delay: 600ms;">
+                    <div class="overflow-hidden h-56 relative">
+                        <img src="aset/12.webp" alt="Pabrik Manufaktur" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/40 transition-colors duration-300"></div>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-gray-900"></h4>
+                        <p class="text-sm text-amber-500 font-medium"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button id="gallery-prev" class="absolute left-0 md:left-6 top-1/2 -translate-y-1/2 bg-white text-blue-900 p-3 rounded-full shadow-lg border border-gray-200 hover:bg-blue-900 hover:text-white transition-colors z-10 focus:outline-none hidden md:block">
+                <i data-lucide="chevron-left" class="w-6 h-6"></i>
+            </button>
+            <button id="gallery-next" class="absolute right-0 md:right-6 top-1/2 -translate-y-1/2 bg-white text-blue-900 p-3 rounded-full shadow-lg border border-gray-200 hover:bg-blue-900 hover:text-white transition-colors z-10 focus:outline-none hidden md:block">
+                <i data-lucide="chevron-right" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="container mx-auto px-6 md:px-12 max-w-4xl scroll-up">
+            <div class="text-center mb-12">
+                <span class="block text-blue-600 font-bold uppercase tracking-wider text-sm mb-2">Pusat Informasi</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions (FAQ)</h2>
+                <p class="text-gray-600">Pertanyaan yang sering diajukan seputar layanan perizinan dan arsitektur.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-gray-200 rounded-lg shadow-sm bg-white overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-5 text-left focus:outline-none hover:bg-gray-50 transition-colors">
+                        <span class="font-bold text-gray-900 text-lg">1. Apakah IMB lama masih berlaku?</span>
+                        <i data-lucide="chevron-down" class="text-gray-500 w-5 h-5 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 text-gray-600 border-t border-gray-100 pt-3">
+                        <p>Ya, Izin Mendirikan Bangunan (IMB) yang telah terbit sebelum berlakunya peraturan baru (UU Cipta Kerja) masih tetap sah dan berlaku, <strong>sepanjang tidak ada perubahan bentuk, fungsi, atau perluasan pada bangunan gedung tersebut.</strong> Jika ada perubahan, Anda diwajibkan mengurus PBG.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-gray-200 rounded-lg shadow-sm bg-white overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-5 text-left focus:outline-none hover:bg-gray-50 transition-colors">
+                        <span class="font-bold text-gray-900 text-lg">2. Berapa lama proses pengurusan desain, PBG, & SLF?</span>
+                        <i data-lucide="chevron-down" class="text-gray-500 w-5 h-5 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 text-gray-600 border-t border-gray-100 pt-3">
+                        <p>Lama waktu proses sangat bergantung pada tingkat kompleksitas bangunan, tahap perancangan arsitektur, kelengkapan dokumen teknis dari klien, dan antrean jadwal sidang di instansi terkait. Umumnya, pengurusan izin memakan waktu antara <strong>1 hingga 3 bulan</strong> sejak desain dan berkas dinyatakan final.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-gray-200 rounded-lg shadow-sm bg-white overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-5 text-left focus:outline-none hover:bg-gray-50 transition-colors">
+                        <span class="font-bold text-gray-900 text-lg">3. Apakah bangunan yang sudah berdiri tapi belum ada izin bisa diurus PBG-nya?</span>
+                        <i data-lucide="chevron-down" class="text-gray-500 w-5 h-5 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 text-gray-600 border-t border-gray-100 pt-3">
+                        <p>Tentu bisa. Bangunan yang sudah terlanjur berdiri dapat diajukan perizinannya melalui mekanisme <strong>PBG Bangunan Eksisting</strong> atau pengajuan SLF yang di dalamnya akan mencakup persetujuan teknis bangunan terbangun. Kami akan membantu menyusun <em>As-Built Drawing</em> dan kajian teknisnya.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="border border-gray-200 rounded-lg shadow-sm bg-white overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-5 text-left focus:outline-none hover:bg-gray-50 transition-colors">
+                        <span class="font-bold text-gray-900 text-lg">4. Apa saja syarat utama untuk mendapatkan SLF & BGH?</span>
+                        <i data-lucide="chevron-down" class="text-gray-500 w-5 h-5 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 text-gray-600 border-t border-gray-100 pt-3">
+                        <p>Untuk SLF syarat utamanya adalah: (1) Memiliki bukti legalitas tanah dan IMB/PBG, (2) Bangunan terbangun sesuai gambar rencana, (3) Lulus uji kelaikan fungsi teknis. Sedangkan untuk <strong>Bangunan Gedung Hijau (BGH)</strong>, terdapat penambahan kriteria berupa pemenuhan standar efisiensi energi, air, tata udara, serta material ramah lingkungan.</p>
+                    </div>
+                </div>
+
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6 md:px-12 text-center scroll-up">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Wujudkan Desain & Legalitas Bangunan Anda</h2>
+            <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+                Hindari sanksi administratif dan pastikan aset Anda memiliki nilai investasi, fungsionalitas, serta keamanan secara hukum. Hubungi tim ahli kami sekarang untuk penawaran terbaik.
+            </p>
+            <a href="https://wa.me/6285270194027?text=Halo%20admin%20PT%20Fremont%20Green%20Vision,%20saya%20ingin%20berkonsultasi%20mengenai%20jasa%20pengurusan%20PBG/SLF/Arsitektur."
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center space-x-2 bg-blue-900 hover:bg-blue-800 text-white px-8 py-4 rounded-md font-semibold transition-colors shadow-lg">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                <span>Chat via WhatsApp Sekarang</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak" class="bg-gray-900 text-gray-300 pt-16 pb-8 border-t border-gray-800">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                
+                <!-- Brand -->
+                <div class="lg:col-span-1 scroll-up">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <img src="aset/logo.jpeg" alt="Logo FGV" class="w-12 h-12 object-contain">
+                        </div>
+                        <div>
+                            <span class="block font-bold text-xl leading-tight text-white">PT Fremont Green Vision</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-6">
+                        Penyedia layanan konsultan arsitektur dan perizinan terpercaya di Indonesia untuk perencanaan, Bangunan Hijau, PBG, serta SLF.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="scroll-up" style="transition-delay: 100ms;">
+                    <h4 class="text-white font-bold mb-6 uppercase text-sm tracking-wider">Tautan Cepat</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="hover:text-amber-400 transition-colors inline-block">Beranda</a></li>
+                        <li><a href="#tentang" class="hover:text-amber-400 transition-colors inline-block">Tentang Kami</a></li>
+                        <li><a href="#layanan" class="hover:text-amber-400 transition-colors inline-block">Layanan Ahli</a></li>
+                        <li><a href="#alur" class="hover:text-amber-400 transition-colors inline-block">Alur Proses</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="scroll-up" style="transition-delay: 200ms;">
+                    <h4 class="text-white font-bold mb-6 uppercase text-sm tracking-wider">Layanan Utama</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start"><i data-lucide="chevron-right" class="w-4 h-4 text-amber-400 mr-2 mt-1 shrink-0"></i> Desain Arsitektur</li>
+                        <li class="flex items-start"><i data-lucide="chevron-right" class="w-4 h-4 text-amber-400 mr-2 mt-1 shrink-0"></i> Sertifikasi BGH</li>
+                        <li class="flex items-start"><i data-lucide="chevron-right" class="w-4 h-4 text-amber-400 mr-2 mt-1 shrink-0"></i> Pengurusan PBG & SLF</li>
+                        <li class="flex items-start"><i data-lucide="chevron-right" class="w-4 h-4 text-amber-400 mr-2 mt-1 shrink-0"></i> Kajian Struktur & MEP</li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="scroll-up" style="transition-delay: 300ms;">
+                    <h4 class="text-white font-bold mb-6 uppercase text-sm tracking-wider">Hubungi Kami</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-amber-400 mr-3 shrink-0 mt-0.5"></i>
+                            <span class="text-sm leading-relaxed">Gedung Perkantoran ABC Lt. 3,<br />Jl. SMTK Medan No.9, Padang Bulan Selayang I,<br />Kec Medan Selayang, Kota Medan, Sumatera Utara</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="phone" class="w-5 h-5 text-amber-400 mr-3 shrink-0"></i>
+                            <span class="text-sm"> 0852 7019 4027</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="mail" class="w-5 h-5 text-amber-400 mr-3 shrink-0"></i>
+                            <span class="text-sm">fremontgreenv@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2026 PT Fremont Green Vision. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Syarat & Ketentuan</a>
+                    <a href="#" class="hover:text-white transition-colors">Kebijakan Privasi</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6285270194027?text=Halo%20admin%20PT%20Fremont%20Green%20Vision,%20saya%20ingin%20berkonsultasi%20mengenai%20jasa%20pengurusan%20PBG/SLF/Arsitektur."
+       target="_blank" rel="noopener noreferrer"
+       class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:bg-[#20bd5a] hover:scale-110 transition-all duration-300 flex items-center justify-center animate-bounce"
+       aria-label="Chat WhatsApp">
+        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <!-- Scripts untuk Fungsionalitas -->
+    <script>
+        // 1. Inisialisasi Lucide Icons
+        lucide.createIcons();
+
+        // 2. Logic Sticky Navbar saat di-scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                // Ubah gaya navbar saat scroll
+                navbar.classList.add('bg-white', 'shadow-md', 'py-3');
+                navbar.classList.remove('bg-white/95', 'backdrop-blur-sm', 'py-5');
+            } else {
+                // Kembalikan ke asal saat di atas
+                navbar.classList.add('bg-white/95', 'backdrop-blur-sm', 'py-5');
+                navbar.classList.remove('bg-white', 'shadow-md', 'py-3');
+            }
+        });
+
+        // 3. Logic Mobile Menu Toggle (Buka/Tutup menu di layar HP)
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const iconMenu = document.getElementById('icon-menu');
+        const iconX = document.getElementById('icon-x');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function toggleMenu() {
+            // Toggle visibility menu
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            
+            // Toggle icon hamburger dan X
+            iconMenu.classList.toggle('hidden');
+            iconX.classList.toggle('hidden');
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMenu);
+
+        // Tutup menu otomatis jika salah satu link di HP diklik
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if(!mobileMenu.classList.contains('hidden')) {
+                    toggleMenu();
+                }
+            });
+        });
+
+        // 4. Logic Galeri Slider (Auto Scroll & Manual Arrow)
+        const slider = document.getElementById('gallery-slider');
+        const prevBtn = document.getElementById('gallery-prev');
+        const nextBtn = document.getElementById('gallery-next');
+        let animationId;
+        let isScrollingBack = false;
+        
+        // Fungsi Auto Scroll menggunakan requestAnimationFrame
+        const startAutoScroll = () => {
+            stopAutoScroll(); // Bersihkan animasi yang mungkin masih berjalan sebelumnya
+            
+            const scrollStep = () => {
+                // Jika sedang dalam proses smooth scroll kembali ke kiri, jangan paksa untuk maju
+                if (!isScrollingBack) {
+                    // Cek jika sudah mentok kanan (dengan toleransi 2 pixel untuk mencegah bug pembulatan layout)
+                    if (slider.scrollLeft >= (slider.scrollWidth - slider.clientWidth - 2)) {
+                        isScrollingBack = true;
+                        slider.scrollTo({ left: 0, behavior: 'smooth' });
+                        
+                        // Berikan waktu (misal 1 detik) agar efek smooth scroll selesai, baru lanjut scroll otomatis
+                        setTimeout(() => {
+                            isScrollingBack = false;
+                        }, 1000);
+                    } else {
+                        // Maju ke kanan
+                        slider.scrollLeft += 1;
+                    }
+                }
+                
+                // Teruskan animasi 60 fps
+                animationId = requestAnimationFrame(scrollStep);
+            };
+            
+            // Mulai putaran animasi
+            animationId = requestAnimationFrame(scrollStep);
+        };
+
+        const stopAutoScroll = () => {
+            if (animationId) cancelAnimationFrame(animationId);
+        };
+
+        // Mulai jalankan jika slider ada di halaman
+        if(slider) {
+            startAutoScroll();
+            // Berhenti otomatis jika user mengarahkan mouse ke atas galeri
+            slider.addEventListener('mouseenter', stopAutoScroll);
+            // Lanjut jalan otomatis saat mouse pergi
+            slider.addEventListener('mouseleave', startAutoScroll);
+        }
+
+        // Arrow Navigasi Manual
+        if (prevBtn && nextBtn) {
+            prevBtn.addEventListener('click', () => {
+                stopAutoScroll();
+                slider.scrollBy({ left: -350, behavior: 'smooth' });
+                // Beri jeda 3 detik sebelum otomatis jalan lagi
+                setTimeout(startAutoScroll, 3000); 
+            });
+
+            nextBtn.addEventListener('click', () => {
+                stopAutoScroll();
+                slider.scrollBy({ left: 350, behavior: 'smooth' });
+                setTimeout(startAutoScroll, 3000);
+            });
+        }
+
+        // 5. Logic Accordion FAQ
+        const faqBtns = document.querySelectorAll('.faq-btn');
+        faqBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                
+                // Toggle buka tutup jawaban
+                content.classList.toggle('hidden');
+                // Putar panah
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // 6. Logic Intersection Observer untuk Efek Scroll Swing & Up
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15 // Animasi dimulai saat 15% elemen terlihat di layar
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Tambahkan class active untuk memicu transisi CSS
+                    entry.target.classList.add('active');
+                    // Stop observasi elemen ini agar animasinya hanya terjadi sekali (saat scroll pertama)
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Pilih semua elemen yang punya class scroll-swing atau scroll-up dan pantau!
+        document.querySelectorAll('.scroll-swing, .scroll-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Re-inisialisasi icon Lucide untuk elemen HTML yang baru ditambahkan
+        lucide.createIcons();
+    </script>
+</body>
+</html>
